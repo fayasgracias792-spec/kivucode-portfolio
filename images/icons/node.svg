@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <path d="M24 4L6 14v20l18 10 18-10V14L24 4z" fill="#83cd29" stroke="#5a9e1f" stroke-width="1"/>
+  <path d="M24 4L6 14v20l18 10 18-10V14L24 4z" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.3"/>
+  <text x="24" y="30" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold" font-family="Arial">N</text>
+</svg>

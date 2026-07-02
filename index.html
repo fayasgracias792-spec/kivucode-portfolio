@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="KivuCode Solutions - Agence de développement logiciel à Bunia, RDC. Experts en React, Node.js, Flutter et solutions numériques innovantes." />
+    <meta name="keywords" content="développement logiciel, Bunia, RDC, React, Node.js, Flutter, applications web, applications mobiles" />
+    <meta name="author" content="KivuCode Solutions" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="KivuCode Solutions - Agence de Développement Logiciel" />
+    <meta property="og:description" content="Propulsez vos idées par la puissance du code. Solutions numériques innovantes à Bunia, RDC." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kivucode.com" />
+    <meta property="og:image" content="https://kivucode.com/images/og-image.webp" />
+    
+    <title>KivuCode Solutions - Agence de Développement Logiciel | Bunia, RDC</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <div class="loader-logo">
+                <span class="loader-glow">KC</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <header class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="KivuCode Solutions - Accueil">
+                <div class="logo-icon">
+                    <span class="logo-glow">KC</span>
+                </div>
+                <span class="logo-text">KivuCode</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks" role="menubar">
+                <a href="#home" class="nav-link active" role="menuitem">Accueil</a>
+                <a href="#services" class="nav-link" role="menuitem">Services</a>
+                <a href="#technologies" class="nav-link" role="menuitem">Technologies</a>
+                <a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a>
+                <a href="#about" class="nav-link" role="menuitem">À propos</a>
+                <a href="#testimonials" class="nav-link" role="menuitem">Témoignages</a>
+                <a href="#faq" class="nav-link" role="menuitem">FAQ</a>
+                <a href="#contact" class="nav-link nav-link-cta" role="menuitem">Contact</a>
+            </nav>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================================
+        SECTION : HERO
+        ============================================================ -->
+        <section id="home" class="hero" aria-label="Section d'accueil">
+            <!-- Background Effects -->
+            <div class="hero-bg">
+                <div class="hero-gradient hero-gradient-1"></div>
+                <div class="hero-gradient hero-gradient-2"></div>
+                <div class="hero-gradient hero-gradient-3"></div>
+                <div class="hero-particles" id="heroParticles"></div>
+                <div class="hero-grid-pattern"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge-wrapper">
+                        <span class="hero-badge">
+                            <span class="badge-dot"></span>
+                            Agence basée à Bunia, RDC
+                        </span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Transformez vos idées en
+                        <span class="hero-title-highlight">
+                            solutions digitales
+                            <span class="highlight-underline"></span>
+                        </span>
+                        d'exception
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        <span class="typing-wrapper">
+                            Experts en <span class="typing-text" id="typingText"></span>
+                        </span>
+                    </p>
+                    
+                    <p class="hero-description">
+                        KivuCode Solutions conçoit et développe des applications web et mobiles 
+                        sur mesure, alliant performance, design et innovation pour propulser 
+                        votre entreprise vers le futur.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Démarrer un projet</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary">
+                            <span>Voir nos réalisations</span>
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number" data-target="150">0</span>
+                            <span class="hero-stat-label">Projets livrés</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number" data-target="98">0</span>
+                            <span class="hero-stat-symbol">%</span>
+                            <span class="hero-stat-label">Clients satisfaits</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number" data-target="5">0</span>
+                            <span class="hero-stat-symbol">+</span>
+                            <span class="hero-stat-label">Ans d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-dashboard-wrapper">
+                        <div class="hero-dashboard-glow"></div>
+                        <img 
+                            src="images/hero-dashboard.webp" 
+                            alt="Dashboard KivuCode Solutions - Interface moderne de développement" 
+                            class="hero-dashboard"
+                            loading="eager"
+                            width="600"
+                            height="400"
+                        />
+                        <div class="hero-dashboard-reflection"></div>
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="hero-floating-card hero-floating-1">
+                        <i class="fab fa-react"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="hero-floating-card hero-floating-2">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="hero-floating-card hero-floating-3">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Flutter</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" aria-hidden="true">
+                <span>Découvrir</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : SERVICES
+        ============================================================ -->
+        <section id="services" class="services" aria-label="Nos services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Nos expertises</span>
+                    <h2 class="section-title">
+                        Des solutions <span class="highlight">sur mesure</span> pour chaque besoin
+                    </h2>
+                    <p class="section-description">
+                        Nous maîtrisons les technologies les plus avancées pour créer 
+                        des expériences digitales exceptionnelles.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-delay="0">
+                        <div class="service-card-inner">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="service-icon-glow"></div>
+                            </div>
+                            <h3 class="service-title">Développement Web</h3>
+                            <p class="service-description">
+                                Sites et applications web performants avec <strong>React</strong>, 
+                                <strong>Next.js</strong> et <strong>Vue.js</strong>. Interfaces 
+                                modernes et responsive.
+                            </p>
+                            <div class="service-techs">
+                                <span>React</span>
+                                <span>Next.js</span>
+                                <span>Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-delay="100">
+                        <div class="service-card-inner">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="service-icon-glow"></div>
+                            </div>
+                            <h3 class="service-title">Backend & API</h3>
+                            <p class="service-description">
+                                APIs robustes et scalables avec <strong>Node.js</strong>, 
+                                <strong>Express</strong> et architectures microservices.
+                            </p>
+                            <div class="service-techs">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-delay="200">
+                        <div class="service-card-inner">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="service-icon-glow"></div>
+                            </div>
+                            <h3 class="service-title">Applications Mobiles</h3>
+                            <p class="service-description">
+                                Apps natives et cross-platform avec <strong>Flutter</strong> 
+                                pour iOS et Android. Performance et expérience utilisateur optimales.
+                            </p>
+                            <div class="service-techs">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-delay="300">
+                        <div class="service-card-inner">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="service-icon-glow"></div>
+                            </div>
+                            <h3 class="service-title">Logiciels sur mesure</h3>
+                            <p class="service-description">
+                                Solutions personnalisées adaptées à vos processus métier. 
+                                De l'analyse au déploiement.
+                            </p>
+                            <div class="service-techs">
+                                <span>Custom</span>
+                                <span>ERP</span>
+                                <span>SaaS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-delay="400">
+                        <div class="service-card-inner">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <div class="service-icon-glow"></div>
+                            </div>
+                            <h3 class="service-title">Cloud & DevOps</h3>
+                            <p class="service-description">
+                                Déploiement et hébergement sur <strong>AWS</strong>. 
+                                Intégration continue et livraison continue.
+                            </p>
+                            <div class="service-techs">
+                                <span>AWS</span>
+                                <span>Docker</span>
+                                <span>CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-delay="500">
+                        <div class="service-card-inner">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="service-icon-glow"></div>
+                            </div>
+                            <h3 class="service-title">Sécurité & Audit</h3>
+                            <p class="service-description">
+                                Audits de sécurité, pentesting et mise en conformité 
+                                pour protéger vos données sensibles.
+                            </p>
+                            <div class="service-techs">
+                                <span>OWASP</span>
+                                <span>Pentest</span>
+                                <span>RGPD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : TECHNOLOGIES
+        ============================================================ -->
+        <section id="technologies" class="technologies" aria-label="Technologies utilisées">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Notre stack technique</span>
+                    <h2 class="section-title">
+                        Les <span class="highlight">technologies</span> qui nous animent
+                    </h2>
+                    <p class="section-description">
+                        Nous utilisons les outils les plus modernes et performants du marché.
+                    </p>
+                </div>
+                
+                <div class="tech-marquee">
+                    <div class="tech-track" id="techTrack">
+                        <!-- Les logos seront dupliqués en JS pour l'effet infini -->
+                    </div>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="icons/react.svg" alt="React" class="tech-icon" loading="lazy" />
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/node.svg" alt="Node.js" class="tech-icon" loading="lazy" />
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/flutter.svg" alt="Flutter" class="tech-icon" loading="lazy" />
+                        <span>Flutter</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/docker.svg" alt="Docker" class="tech-icon" loading="lazy" />
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/aws.svg" alt="AWS" class="tech-icon" loading="lazy" />
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/mongodb.svg" alt="MongoDB" class="tech-icon" loading="lazy" />
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-laravel tech-fallback"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database tech-fallback"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-fire tech-fallback"></i>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : PORTFOLIO
+        ============================================================ -->
+        <section id="portfolio" class="portfolio" aria-label="Nos réalisations">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Portfolio</span>
+                    <h2 class="section-title">
+                        Nos <span class="highlight">réalisations</span> récentes
+                    </h2>
+                    <p class="section-description">
+                        Découvrez quelques projets qui illustrent notre savoir-faire.
+                    </p>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <article class="portfolio-card" data-delay="0">
+                        <div class="portfolio-image-wrapper">
+                            <img src="images/project1.webp" alt="Projet E-Commerce" class="portfolio-image" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" aria-label="Voir le projet E-Commerce">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">E-Commerce</span>
+                            <h3 class="portfolio-title">MarketPlace Pro</h3>
+                            <p class="portfolio-description">
+                                Plateforme e-commerce complète avec paiement mobile intégré.
+                            </p>
+                            <div class="portfolio-techs">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-card" data-delay="100">
+                        <div class="portfolio-image-wrapper">
+                            <img src="images/project2.webp" alt="Application Mobile Santé" class="portfolio-image" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" aria-label="Voir l'application mobile santé">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Santé</span>
+                            <h3 class="portfolio-title">MediApp Mobile</h3>
+                            <p class="portfolio-description">
+                                Application de suivi médical et prise de rendez-vous en ligne.
+                            </p>
+                            <div class="portfolio-techs">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-card" data-delay="200">
+                        <div class="portfolio-image-wrapper">
+                            <img src="images/project3.webp" alt="Dashboard Analytics" class="portfolio-image" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" aria-label="Voir le dashboard analytics">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">SaaS</span>
+                            <h3 class="portfolio-title">Analytics Dashboard</h3>
+                            <p class="portfolio-description">
+                                Tableau de bord analytique pour le suivi des KPIs en temps réel.
+                            </p>
+                            <div class="portfolio-techs">
+                                <span>Next.js</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-card" data-delay="300">
+                        <div class="portfolio-image-wrapper">
+                            <img src="images/project4.webp" alt="ERP Gestion" class="portfolio-image" loading="lazy" />
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" aria-label="Voir l'ERP de gestion">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Enterprise</span>
+                            <h3 class="portfolio-title">ERP Manager</h3>
+                            <p class="portfolio-description">
+                                Système ERP complet pour la gestion d'entreprise.
+                            </p>
+                            <div class="portfolio-techs">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="portfolio-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Lancer votre projet</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : POURQUOI NOUS
+        ============================================================ -->
+        <section id="why-us" class="why-us" aria-label="Pourquoi nous choisir">
+            <div class="container">
+                <div class="why-us-grid">
+                    <div class="why-us-content">
+                        <span class="section-badge">Pourquoi KivuCode ?</span>
+                        <h2 class="section-title">
+                            L'excellence <span class="highlight">technologique</span> au service de votre réussite
+                        </h2>
+                        <p class="why-us-description">
+                            Nous combinons expertise technique, méthodologie agile et passion 
+                            du code pour livrer des solutions qui dépassent vos attentes.
+                        </p>
+                        
+                        <div class="why-us-features">
+                            <div class="why-us-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Livraison Rapide</h4>
+                                    <p>Méthodologie agile pour des résultats concrets en un temps record.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="why-us-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Qualité Premium</h4>
+                                    <p>Code propre, testé et documenté selon les meilleures pratiques.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="why-us-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Support 24/7</h4>
+                                    <p>Une équipe disponible et réactive pour vous accompagner.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="why-us-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Sécurité Maximale</h4>
+                                    <p>Protection de vos données avec les standards de sécurité les plus élevés.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="why-us-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Performance</h4>
+                                    <p>Applications optimisées pour une expérience utilisateur fluide.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="why-us-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Innovation</h4>
+                                    <p>Veille technologique constante pour des solutions à la pointe.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="why-us-image-wrapper">
+                        <div class="why-us-image-container">
+                            <img src="images/office.webp" alt="Bureau KivuCode Solutions" class="why-us-image" loading="lazy" />
+                            <div class="why-us-image-glow"></div>
+                        </div>
+                        <div class="why-us-experience">
+                            <span class="experience-number">5+</span>
+                            <span class="experience-text">Années d'excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : À PROPOS
+        ============================================================ -->
+        <section id="about" class="about" aria-label="À propos de KivuCode">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-container">
+                            <img src="images/team.webp" alt="Équipe KivuCode Solutions" class="about-image" loading="lazy" />
+                            <div class="about-image-border"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <span class="section-badge">Notre histoire</span>
+                        <h2 class="section-title">
+                            L'innovation <span class="highlight">au cœur de Bunia</span>
+                        </h2>
+                        <p class="about-description">
+                            Fondée en 2021, <strong>KivuCode Solutions</strong> est née de la volonté 
+                            d'apporter des solutions numériques de classe mondiale en République 
+                            Démocratique du Congo. Notre équipe passionnée transforme vos défis 
+                            en opportunités digitales.
+                        </p>
+                        <p class="about-description">
+                            Nous croyons que la technologie doit être accessible à tous, et nous 
+                            mettons notre expertise au service des entreprises locales et internationales.
+                        </p>
+                        
+                        <div class="about-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2021</span>
+                                    <h4>Création de KivuCode</h4>
+                                    <p>Lancement de l'agence à Bunia avec une mission claire.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2022</span>
+                                    <h4>Premiers grands projets</h4>
+                                    <p>Livraison de solutions pour des clients internationaux.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2024</span>
+                                    <h4>Expansion & Excellence</h4>
+                                    <p>Plus de 150 projets livrés et une équipe en croissance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="150">0</span>
+                                <span class="stat-symbol">+</span>
+                                <span class="stat-label">Projets livrés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="50">0</span>
+                                <span class="stat-symbol">+</span>
+                                <span class="stat-label">Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="10">0</span>
+                                <span class="stat-symbol">+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="24">0</span>
+                                <span class="stat-label">Pays</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : TÉMOIGNAGES
+        ============================================================ -->
+        <section id="testimonials" class="testimonials" aria-label="Témoignages clients">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Témoignages</span>
+                    <h2 class="section-title">
+                        Ce que disent <span class="highlight">nos clients</span>
+                    </h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-delay="0">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "KivuCode a transformé notre vision en une application exceptionnelle. 
+                            Leur professionnalisme et leur réactivité sont remarquables."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='25' fill='%233B82F6'/%3E%3Cellipse cx='50' cy='90' rx='40' ry='25' fill='%233B82F6'/%3E%3C/svg%3E" alt="Jean-Pierre Mukadi" loading="lazy" />
+                            </div>
+                            <div class="author-info">
+                                <h4>Jean-Pierre Mukadi</h4>
+                                <span>CEO, TechAfrica</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-delay="100">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Une équipe talentueuse qui comprend vraiment les besoins du marché 
+                            africain. Je recommande vivement leurs services."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='25' fill='%2306B6D4'/%3E%3Cellipse cx='50' cy='90' rx='40' ry='25' fill='%2306B6D4'/%3E%3C/svg%3E" alt="Marie Kashindi" loading="lazy" />
+                            </div>
+                            <div class="author-info">
+                                <h4>Marie Kashindi</h4>
+                                <span>Fondatrice, InnovApp</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-delay="200">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Leur expertise en Flutter nous a permis de lancer notre application 
+                            mobile en un temps record. Résultat au-delà de nos attentes."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='25' fill='%238B5CF6'/%3E%3Cellipse cx='50' cy='90' rx='40' ry='25' fill='%238B5CF6'/%3E%3C/svg%3E" alt="David Okonkwo" loading="lazy" />
+                            </div>
+                            <div class="author-info">
+                                <h4>David Okonkwo</h4>
+                                <span>Directeur, DigitalFirst</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : FAQ
+        ============================================================ -->
+        <section id="faq" class="faq" aria-label="Questions fréquentes">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">FAQ</span>
+                    <h2 class="section-title">
+                        Questions <span class="highlight">fréquentes</span>
+                    </h2>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Comment démarrer un projet avec KivuCode ?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Contactez-nous via le formulaire ou WhatsApp. Nous organisons un appel découverte pour comprendre vos besoins, puis nous vous proposons un devis détaillé sous 48h.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quels sont vos délais de livraison moyens ?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Les délais varient selon la complexité du projet. Un site vitrine peut être livré en 2-4 semaines, tandis qu'une application complète peut prendre 2-4 mois.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Proposez-vous un support après livraison ?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolument ! Nous offrons une garantie de 3 mois sur tous nos projets, avec un support technique inclus pour assurer la stabilité de votre solution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Comment assurez-vous la sécurité des projets ?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous suivons les standards OWASP, utilisons le chiffrement des données, effectuons des tests de pénétration et mettons en place une authentification sécurisée.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Travaillez-vous avec des clients internationaux ?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, nous collaborons avec des clients en Afrique, en Europe et en Amérique du Nord. La communication se fait en français et en anglais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SECTION : CONTACT
+        ============================================================ -->
+        <section id="contact" class="contact" aria-label="Contactez-nous">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Contact</span>
+                    <h2 class="section-title">
+                        Prêt à <span class="highlight">concrétiser</span> votre projet ?
+                    </h2>
+                    <p class="section-description">
+                        Une idée, un besoin ? Échangeons ensemble pour donner vie à votre vision.
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeebzrvb" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Nom complet
+                                    <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="Votre nom" 
+                                    required 
+                                    autocomplete="name"
+                                />
+                                <span class="form-error">Ce champ est requis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                    <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="votre@email.com" 
+                                    required 
+                                    autocomplete="email"
+                                />
+                                <span class="form-error">Email invalide</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="subject">
+                                    <i class="fas fa-tag"></i>
+                                    Sujet
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    placeholder="Sujet de votre message" 
+                                />
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i>
+                                    Message
+                                    <span class="required">*</span>
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    placeholder="Décrivez votre projet en détail..." 
+                                    required
+                                ></textarea>
+                                <span class="form-error">Ce champ est requis</span>
+                                <span class="form-counter">0/500</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Envoyer le message</span>
+                            <span class="btn-loader">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form-feedback" id="formFeedback"></div>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Adresse</h4>
+                                    <p>Bunia, République Démocratique du Congo</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>
+                                        <a href="https://wa.me/243832287305" target="_blank" rel="noopener">
+                                            +243 832 287 305
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>
+                                        <a href="mailto:fayasgracias792@gmail.com">
+                                            fayasgracias792@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-socials">
+                                <a href="#" aria-label="LinkedIn" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" aria-label="GitHub" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" aria-label="Twitter" class="social-link">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a href="#" aria-label="Instagram" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-availability">
+                            <div class="availability-dot"></div>
+                            <span>Disponible pour de nouveaux projets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <span class="logo-glow">KC</span>
+                        </div>
+                        <span class="logo-text">KivuCode</span>
+                    </div>
+                    <p class="footer-description">
+                        Propulsez vos idées par la puissance du code. Solutions 
+                        numériques innovantes pour entreprises ambitieuses.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Développement Web</a></li>
+                        <li><a href="#services">Applications Mobiles</a></li>
+                        <li><a href="#services">Backend & API</a></li>
+                        <li><a href="#services">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités et conseils tech.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input-wrapper">
+                            <input 
+                                type="email" 
+                                placeholder="votre@email.com" 
+                                required 
+                                aria-label="Email pour la newsletter"
+                            />
+                            <button type="submit" aria-label="S'inscrire à la newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KivuCode Solutions. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================================
+    WHATSAPP FLOATING BUTTON
+    ============================================================ -->
+    <a 
+        href="https://wa.me/243832287305" 
+        target="_blank" 
+        class="whatsapp-float" 
+        aria-label="Contactez-nous sur WhatsApp"
+        rel="noopener"
+    >
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Discutons !</span>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
