@@ -8,7 +8,6 @@
     <meta name="description" content="KivuCode Solutions - Agence de développement logiciel à Bunia, RDC. Experts en React, Node.js, Flutter et solutions numériques innovantes." />
     <meta name="keywords" content="développement logiciel, Bunia, RDC, React, Node.js, Flutter, applications web, applications mobiles" />
     <meta name="author" content="KivuCode Solutions" />
-    <meta name="robots" content="index, follow" />
     
     <!-- Open Graph -->
     <meta property="og:title" content="KivuCode Solutions - Agence de Développement Logiciel" />
@@ -16,18 +15,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kivucode.com" />
     <meta property="og:image" content="https://kivucode.com/images/og-image.webp" />
-    <meta property="og:locale" content="fr_FR" />
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="KivuCode Solutions - Agence de Développement Logiciel" />
-    <meta name="twitter:description" content="Propulsez vos idées par la puissance du code." />
     
     <title>KivuCode Solutions - Agence de Développement Logiciel | Bunia, RDC</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,45 +33,35 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- ============================================================
-    SKIP TO CONTENT
-    ============================================================ -->
-    <a href="#main" class="skip-to-content">Passer au contenu principal</a>
-
-    <!-- ============================================================
-    LOADER
-    ============================================================ -->
-    <div class="loader-wrapper" id="loader" role="status" aria-label="Chargement">
+    <!-- Loader -->
+    <div class="loader-wrapper" id="loader">
         <div class="loader">
             <div class="loader-logo">
-                <span class="loader-glow" aria-hidden="true">KC</span>
+                <span class="loader-glow">KC</span>
             </div>
             <div class="loader-bar">
                 <div class="loader-progress"></div>
             </div>
-            <p class="loader-text">Chargement...</p>
         </div>
     </div>
 
-    <!-- ============================================================
-    CUSTOM CURSOR (Desktop seulement)
-    ============================================================ -->
-    <div class="cursor" id="cursor" aria-hidden="true"></div>
-    <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
 
     <!-- ============================================================
     NAVIGATION
     ============================================================ -->
-    <header class="navbar" id="navbar" role="banner">
+    <header class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
         <div class="container nav-container">
             <a href="#home" class="logo" aria-label="KivuCode Solutions - Accueil">
                 <div class="logo-icon">
-                    <span class="logo-glow" aria-hidden="true">KC</span>
+                    <span class="logo-glow">KC</span>
                 </div>
                 <span class="logo-text">KivuCode</span>
             </a>
             
-            <nav class="nav-links" id="navLinks" role="navigation" aria-label="Navigation principale">
+            <nav class="nav-links" id="navLinks" role="menubar">
                 <a href="#home" class="nav-link active" role="menuitem">Accueil</a>
                 <a href="#services" class="nav-link" role="menuitem">Services</a>
                 <a href="#technologies" class="nav-link" role="menuitem">Technologies</a>
@@ -87,29 +69,24 @@
                 <a href="#about" class="nav-link" role="menuitem">À propos</a>
                 <a href="#testimonials" class="nav-link" role="menuitem">Témoignages</a>
                 <a href="#faq" class="nav-link" role="menuitem">FAQ</a>
-                <a href="#contact" class="nav-link nav-link-cta" role="menuitem">
-                    <span>Contact</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
+                <a href="#contact" class="nav-link nav-link-cta" role="menuitem">Contact</a>
             </nav>
             
-            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </header>
 
-    <!-- ============================================================
-    MAIN CONTENT
-    ============================================================ -->
-    <main id="main">
+    <main>
         <!-- ============================================================
         SECTION : HERO
         ============================================================ -->
         <section id="home" class="hero" aria-label="Section d'accueil">
-            <div class="hero-bg" aria-hidden="true">
+            <!-- Background Effects -->
+            <div class="hero-bg">
                 <div class="hero-gradient hero-gradient-1"></div>
                 <div class="hero-gradient hero-gradient-2"></div>
                 <div class="hero-gradient hero-gradient-3"></div>
@@ -121,7 +98,7 @@
                 <div class="hero-text">
                     <div class="hero-badge-wrapper">
                         <span class="hero-badge">
-                            <span class="badge-dot" aria-hidden="true"></span>
+                            <span class="badge-dot"></span>
                             Agence basée à Bunia, RDC
                         </span>
                     </div>
@@ -130,7 +107,7 @@
                         Transformez vos idées en
                         <span class="hero-title-highlight">
                             solutions digitales
-                            <span class="highlight-underline" aria-hidden="true"></span>
+                            <span class="highlight-underline"></span>
                         </span>
                         d'exception
                     </h1>
@@ -150,58 +127,59 @@
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary">
                             <span>Démarrer un projet</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                         <a href="#portfolio" class="btn btn-secondary">
                             <span>Voir nos réalisations</span>
-                            <i class="fas fa-eye" aria-hidden="true"></i>
+                            <i class="fas fa-eye"></i>
                         </a>
                     </div>
                     
-                    <div class="hero-stats" role="list">
-                        <div class="hero-stat" role="listitem">
-                            <span class="hero-stat-number" data-target="150" aria-hidden="true">0</span>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number" data-target="150">0</span>
                             <span class="hero-stat-label">Projets livrés</span>
                         </div>
-                        <div class="hero-stat-divider" aria-hidden="true"></div>
-                        <div class="hero-stat" role="listitem">
-                            <span class="hero-stat-number" data-target="98" aria-hidden="true">0</span>
-                            <span class="hero-stat-symbol" aria-hidden="true">%</span>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number" data-target="98">0</span>
+                            <span class="hero-stat-symbol">%</span>
                             <span class="hero-stat-label">Clients satisfaits</span>
                         </div>
-                        <div class="hero-stat-divider" aria-hidden="true"></div>
-                        <div class="hero-stat" role="listitem">
-                            <span class="hero-stat-number" data-target="5" aria-hidden="true">0</span>
-                            <span class="hero-stat-symbol" aria-hidden="true">+</span>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number" data-target="5">0</span>
+                            <span class="hero-stat-symbol">+</span>
                             <span class="hero-stat-label">Ans d'expérience</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="hero-visual" aria-hidden="true">
+                <div class="hero-visual">
                     <div class="hero-dashboard-wrapper">
                         <div class="hero-dashboard-glow"></div>
-                        <div class="hero-dashboard-placeholder">
-                            <div class="dashboard-grid">
-                                <div class="dashboard-bar"></div>
-                                <div class="dashboard-bar"></div>
-                                <div class="dashboard-bar"></div>
-                                <div class="dashboard-chart"></div>
-                            </div>
-                        </div>
+                        <img 
+                            src="images/hero-dashboard.webp" 
+                            alt="Dashboard KivuCode Solutions - Interface moderne de développement" 
+                            class="hero-dashboard"
+                            loading="eager"
+                            width="600"
+                            height="400"
+                        />
                         <div class="hero-dashboard-reflection"></div>
                     </div>
                     
+                    <!-- Floating Elements -->
                     <div class="hero-floating-card hero-floating-1">
-                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <i class="fab fa-react"></i>
                         <span>React.js</span>
                     </div>
                     <div class="hero-floating-card hero-floating-2">
-                        <i class="fab fa-node-js" aria-hidden="true"></i>
+                        <i class="fab fa-node-js"></i>
                         <span>Node.js</span>
                     </div>
                     <div class="hero-floating-card hero-floating-3">
-                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <i class="fas fa-mobile-alt"></i>
                         <span>Flutter</span>
                     </div>
                 </div>
@@ -232,13 +210,13 @@
                 </div>
                 
                 <div class="services-grid">
-                    <article class="service-card" data-delay="0">
+                    <div class="service-card" data-delay="0">
                         <div class="service-card-inner">
                             <div class="service-icon-wrapper">
                                 <div class="service-icon">
-                                    <i class="fas fa-globe" aria-hidden="true"></i>
+                                    <i class="fas fa-globe"></i>
                                 </div>
-                                <div class="service-icon-glow" aria-hidden="true"></div>
+                                <div class="service-icon-glow"></div>
                             </div>
                             <h3 class="service-title">Développement Web</h3>
                             <p class="service-description">
@@ -252,17 +230,17 @@
                                 <span>Vue.js</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
                     
-                    <article class="service-card" data-delay="100">
+                    <div class="service-card" data-delay="100">
                         <div class="service-card-inner">
                             <div class="service-icon-wrapper">
                                 <div class="service-icon">
-                                    <i class="fas fa-server" aria-hidden="true"></i>
+                                    <i class="fas fa-server"></i>
                                 </div>
-                                <div class="service-icon-glow" aria-hidden="true"></div>
+                                <div class="service-icon-glow"></div>
                             </div>
-                            <h3 class="service-title">Backend &amp; API</h3>
+                            <h3 class="service-title">Backend & API</h3>
                             <p class="service-description">
                                 APIs robustes et scalables avec <strong>Node.js</strong>, 
                                 <strong>Express</strong> et architectures microservices.
@@ -273,15 +251,15 @@
                                 <span>Laravel</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
                     
-                    <article class="service-card" data-delay="200">
+                    <div class="service-card" data-delay="200">
                         <div class="service-card-inner">
                             <div class="service-icon-wrapper">
                                 <div class="service-icon">
-                                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                    <i class="fas fa-mobile-alt"></i>
                                 </div>
-                                <div class="service-icon-glow" aria-hidden="true"></div>
+                                <div class="service-icon-glow"></div>
                             </div>
                             <h3 class="service-title">Applications Mobiles</h3>
                             <p class="service-description">
@@ -294,15 +272,15 @@
                                 <span>Firebase</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
                     
-                    <article class="service-card" data-delay="300">
+                    <div class="service-card" data-delay="300">
                         <div class="service-card-inner">
                             <div class="service-icon-wrapper">
                                 <div class="service-icon">
-                                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                                    <i class="fas fa-cogs"></i>
                                 </div>
-                                <div class="service-icon-glow" aria-hidden="true"></div>
+                                <div class="service-icon-glow"></div>
                             </div>
                             <h3 class="service-title">Logiciels sur mesure</h3>
                             <p class="service-description">
@@ -315,17 +293,17 @@
                                 <span>SaaS</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
                     
-                    <article class="service-card" data-delay="400">
+                    <div class="service-card" data-delay="400">
                         <div class="service-card-inner">
                             <div class="service-icon-wrapper">
                                 <div class="service-icon">
-                                    <i class="fas fa-cloud" aria-hidden="true"></i>
+                                    <i class="fas fa-cloud"></i>
                                 </div>
-                                <div class="service-icon-glow" aria-hidden="true"></div>
+                                <div class="service-icon-glow"></div>
                             </div>
-                            <h3 class="service-title">Cloud &amp; DevOps</h3>
+                            <h3 class="service-title">Cloud & DevOps</h3>
                             <p class="service-description">
                                 Déploiement et hébergement sur <strong>AWS</strong>. 
                                 Intégration continue et livraison continue.
@@ -336,17 +314,17 @@
                                 <span>CI/CD</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
                     
-                    <article class="service-card" data-delay="500">
+                    <div class="service-card" data-delay="500">
                         <div class="service-card-inner">
                             <div class="service-icon-wrapper">
                                 <div class="service-icon">
-                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                    <i class="fas fa-shield-alt"></i>
                                 </div>
-                                <div class="service-icon-glow" aria-hidden="true"></div>
+                                <div class="service-icon-glow"></div>
                             </div>
-                            <h3 class="service-title">Sécurité &amp; Audit</h3>
+                            <h3 class="service-title">Sécurité & Audit</h3>
                             <p class="service-description">
                                 Audits de sécurité, pentesting et mise en conformité 
                                 pour protéger vos données sensibles.
@@ -357,7 +335,7 @@
                                 <span>RGPD</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -378,51 +356,47 @@
                 </div>
                 
                 <div class="tech-marquee">
-                    <div class="tech-track" id="techTrack" role="list">
-                        <!-- Généré par JavaScript -->
+                    <div class="tech-track" id="techTrack">
+                        <!-- Les logos seront dupliqués en JS pour l'effet infini -->
                     </div>
                 </div>
                 
-                <div class="tech-grid" role="list">
-                    <div class="tech-item" role="listitem">
-                        <i class="fab fa-react tech-fallback" aria-hidden="true"></i>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="icons/react.svg" alt="React" class="tech-icon" loading="lazy" />
                         <span>React</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fab fa-node-js tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <img src="icons/node.svg" alt="Node.js" class="tech-icon" loading="lazy" />
                         <span>Node.js</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fas fa-mobile-alt tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <img src="icons/flutter.svg" alt="Flutter" class="tech-icon" loading="lazy" />
                         <span>Flutter</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fab fa-docker tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <img src="icons/docker.svg" alt="Docker" class="tech-icon" loading="lazy" />
                         <span>Docker</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fas fa-cloud tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <img src="icons/aws.svg" alt="AWS" class="tech-icon" loading="lazy" />
                         <span>AWS</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fas fa-database tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <img src="icons/mongodb.svg" alt="MongoDB" class="tech-icon" loading="lazy" />
                         <span>MongoDB</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fab fa-laravel tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <i class="fab fa-laravel tech-fallback"></i>
                         <span>Laravel</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fas fa-database tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <i class="fas fa-database tech-fallback"></i>
                         <span>PostgreSQL</span>
                     </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fas fa-fire tech-fallback" aria-hidden="true"></i>
+                    <div class="tech-item">
+                        <i class="fas fa-fire tech-fallback"></i>
                         <span>Firebase</span>
-                    </div>
-                    <div class="tech-item" role="listitem">
-                        <i class="fab fa-js tech-fallback" aria-hidden="true"></i>
-                        <span>TypeScript</span>
                     </div>
                 </div>
             </div>
@@ -446,12 +420,10 @@
                 <div class="portfolio-grid">
                     <article class="portfolio-card" data-delay="0">
                         <div class="portfolio-image-wrapper">
-                            <div class="portfolio-image-placeholder">
-                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
+                            <img src="images/project1.webp" alt="Projet E-Commerce" class="portfolio-image" loading="lazy" />
                             <div class="portfolio-overlay">
                                 <a href="#" class="portfolio-link" aria-label="Voir le projet E-Commerce">
-                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -471,12 +443,10 @@
                     
                     <article class="portfolio-card" data-delay="100">
                         <div class="portfolio-image-wrapper">
-                            <div class="portfolio-image-placeholder">
-                                <i class="fas fa-heartbeat" aria-hidden="true"></i>
-                            </div>
+                            <img src="images/project2.webp" alt="Application Mobile Santé" class="portfolio-image" loading="lazy" />
                             <div class="portfolio-overlay">
                                 <a href="#" class="portfolio-link" aria-label="Voir l'application mobile santé">
-                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -496,12 +466,10 @@
                     
                     <article class="portfolio-card" data-delay="200">
                         <div class="portfolio-image-wrapper">
-                            <div class="portfolio-image-placeholder">
-                                <i class="fas fa-chart-line" aria-hidden="true"></i>
-                            </div>
+                            <img src="images/project3.webp" alt="Dashboard Analytics" class="portfolio-image" loading="lazy" />
                             <div class="portfolio-overlay">
                                 <a href="#" class="portfolio-link" aria-label="Voir le dashboard analytics">
-                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -521,12 +489,10 @@
                     
                     <article class="portfolio-card" data-delay="300">
                         <div class="portfolio-image-wrapper">
-                            <div class="portfolio-image-placeholder">
-                                <i class="fas fa-building" aria-hidden="true"></i>
-                            </div>
+                            <img src="images/project4.webp" alt="ERP Gestion" class="portfolio-image" loading="lazy" />
                             <div class="portfolio-overlay">
                                 <a href="#" class="portfolio-link" aria-label="Voir l'ERP de gestion">
-                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -548,7 +514,7 @@
                 <div class="portfolio-cta">
                     <a href="#contact" class="btn btn-primary">
                         <span>Lancer votre projet</span>
-                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        <i class="fas fa-rocket"></i>
                     </a>
                 </div>
             </div>
@@ -573,7 +539,7 @@
                         <div class="why-us-features">
                             <div class="why-us-feature">
                                 <div class="feature-icon">
-                                    <i class="fas fa-bolt" aria-hidden="true"></i>
+                                    <i class="fas fa-bolt"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h4>Livraison Rapide</h4>
@@ -583,7 +549,7 @@
                             
                             <div class="why-us-feature">
                                 <div class="feature-icon">
-                                    <i class="fas fa-medal" aria-hidden="true"></i>
+                                    <i class="fas fa-medal"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h4>Qualité Premium</h4>
@@ -593,7 +559,7 @@
                             
                             <div class="why-us-feature">
                                 <div class="feature-icon">
-                                    <i class="fas fa-headset" aria-hidden="true"></i>
+                                    <i class="fas fa-headset"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h4>Support 24/7</h4>
@@ -603,7 +569,7 @@
                             
                             <div class="why-us-feature">
                                 <div class="feature-icon">
-                                    <i class="fas fa-lock" aria-hidden="true"></i>
+                                    <i class="fas fa-lock"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h4>Sécurité Maximale</h4>
@@ -613,7 +579,7 @@
                             
                             <div class="why-us-feature">
                                 <div class="feature-icon">
-                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                    <i class="fas fa-chart-line"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h4>Performance</h4>
@@ -623,7 +589,7 @@
                             
                             <div class="why-us-feature">
                                 <div class="feature-icon">
-                                    <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                                    <i class="fas fa-lightbulb"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h4>Innovation</h4>
@@ -633,14 +599,9 @@
                         </div>
                     </div>
                     
-                    <div class="why-us-image-wrapper" aria-hidden="true">
+                    <div class="why-us-image-wrapper">
                         <div class="why-us-image-container">
-                            <div class="why-us-image-placeholder">
-                                <div class="placeholder-content">
-                                    <i class="fas fa-code" aria-hidden="true"></i>
-                                    <span>KivuCode</span>
-                                </div>
-                            </div>
+                            <img src="images/office.webp" alt="Bureau KivuCode Solutions" class="why-us-image" loading="lazy" />
                             <div class="why-us-image-glow"></div>
                         </div>
                         <div class="why-us-experience">
@@ -658,14 +619,9 @@
         <section id="about" class="about" aria-label="À propos de KivuCode">
             <div class="container">
                 <div class="about-grid">
-                    <div class="about-image-wrapper" aria-hidden="true">
+                    <div class="about-image-wrapper">
                         <div class="about-image-container">
-                            <div class="about-image-placeholder">
-                                <div class="placeholder-content">
-                                    <i class="fas fa-users" aria-hidden="true"></i>
-                                    <span>Équipe KivuCode</span>
-                                </div>
-                            </div>
+                            <img src="images/team.webp" alt="Équipe KivuCode Solutions" class="about-image" loading="lazy" />
                             <div class="about-image-border"></div>
                         </div>
                     </div>
@@ -688,7 +644,7 @@
                         
                         <div class="about-timeline">
                             <div class="timeline-item">
-                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-dot"></div>
                                 <div class="timeline-content">
                                     <span class="timeline-year">2021</span>
                                     <h4>Création de KivuCode</h4>
@@ -697,7 +653,7 @@
                             </div>
                             
                             <div class="timeline-item">
-                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-dot"></div>
                                 <div class="timeline-content">
                                     <span class="timeline-year">2022</span>
                                     <h4>Premiers grands projets</h4>
@@ -706,33 +662,33 @@
                             </div>
                             
                             <div class="timeline-item">
-                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-dot"></div>
                                 <div class="timeline-content">
                                     <span class="timeline-year">2024</span>
-                                    <h4>Expansion &amp; Excellence</h4>
+                                    <h4>Expansion & Excellence</h4>
                                     <p>Plus de 150 projets livrés et une équipe en croissance.</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="about-stats" role="list">
-                            <div class="stat-item" role="listitem">
-                                <span class="stat-number" data-target="150" aria-hidden="true">0</span>
-                                <span class="stat-symbol" aria-hidden="true">+</span>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="150">0</span>
+                                <span class="stat-symbol">+</span>
                                 <span class="stat-label">Projets livrés</span>
                             </div>
-                            <div class="stat-item" role="listitem">
-                                <span class="stat-number" data-target="50" aria-hidden="true">0</span>
-                                <span class="stat-symbol" aria-hidden="true">+</span>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="50">0</span>
+                                <span class="stat-symbol">+</span>
                                 <span class="stat-label">Clients</span>
                             </div>
-                            <div class="stat-item" role="listitem">
-                                <span class="stat-number" data-target="10" aria-hidden="true">0</span>
-                                <span class="stat-symbol" aria-hidden="true">+</span>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="10">0</span>
+                                <span class="stat-symbol">+</span>
                                 <span class="stat-label">Technologies</span>
                             </div>
-                            <div class="stat-item" role="listitem">
-                                <span class="stat-number" data-target="24" aria-hidden="true">0</span>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="24">0</span>
                                 <span class="stat-label">Pays</span>
                             </div>
                         </div>
@@ -754,8 +710,8 @@
                 </div>
                 
                 <div class="testimonials-grid">
-                    <blockquote class="testimonial-card" data-delay="0">
-                        <div class="testimonial-stars" aria-hidden="true">
+                    <div class="testimonial-card" data-delay="0">
+                        <div class="testimonial-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -766,19 +722,19 @@
                             "KivuCode a transformé notre vision en une application exceptionnelle. 
                             Leur professionnalisme et leur réactivité sont remarquables."
                         </p>
-                        <footer class="testimonial-author">
+                        <div class="testimonial-author">
                             <div class="author-avatar">
-                                <span class="author-initials">JM</span>
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='25' fill='%233B82F6'/%3E%3Cellipse cx='50' cy='90' rx='40' ry='25' fill='%233B82F6'/%3E%3C/svg%3E" alt="Jean-Pierre Mukadi" loading="lazy" />
                             </div>
                             <div class="author-info">
-                                <cite>Jean-Pierre Mukadi</cite>
+                                <h4>Jean-Pierre Mukadi</h4>
                                 <span>CEO, TechAfrica</span>
                             </div>
-                        </footer>
-                    </blockquote>
+                        </div>
+                    </div>
                     
-                    <blockquote class="testimonial-card" data-delay="100">
-                        <div class="testimonial-stars" aria-hidden="true">
+                    <div class="testimonial-card" data-delay="100">
+                        <div class="testimonial-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -789,19 +745,19 @@
                             "Une équipe talentueuse qui comprend vraiment les besoins du marché 
                             africain. Je recommande vivement leurs services."
                         </p>
-                        <footer class="testimonial-author">
+                        <div class="testimonial-author">
                             <div class="author-avatar">
-                                <span class="author-initials">MK</span>
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='25' fill='%2306B6D4'/%3E%3Cellipse cx='50' cy='90' rx='40' ry='25' fill='%2306B6D4'/%3E%3C/svg%3E" alt="Marie Kashindi" loading="lazy" />
                             </div>
                             <div class="author-info">
-                                <cite>Marie Kashindi</cite>
+                                <h4>Marie Kashindi</h4>
                                 <span>Fondatrice, InnovApp</span>
                             </div>
-                        </footer>
-                    </blockquote>
+                        </div>
+                    </div>
                     
-                    <blockquote class="testimonial-card" data-delay="200">
-                        <div class="testimonial-stars" aria-hidden="true">
+                    <div class="testimonial-card" data-delay="200">
+                        <div class="testimonial-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -812,16 +768,16 @@
                             "Leur expertise en Flutter nous a permis de lancer notre application 
                             mobile en un temps record. Résultat au-delà de nos attentes."
                         </p>
-                        <footer class="testimonial-author">
+                        <div class="testimonial-author">
                             <div class="author-avatar">
-                                <span class="author-initials">DO</span>
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='25' fill='%238B5CF6'/%3E%3Cellipse cx='50' cy='90' rx='40' ry='25' fill='%238B5CF6'/%3E%3C/svg%3E" alt="David Okonkwo" loading="lazy" />
                             </div>
                             <div class="author-info">
-                                <cite>David Okonkwo</cite>
+                                <h4>David Okonkwo</h4>
                                 <span>Directeur, DigitalFirst</span>
                             </div>
-                        </footer>
-                    </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -839,55 +795,55 @@
                 </div>
                 
                 <div class="faq-list">
-                    <details class="faq-item">
-                        <summary class="faq-question">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
                             <span>Comment démarrer un projet avec KivuCode ?</span>
-                            <i class="fas fa-plus" aria-hidden="true"></i>
-                        </summary>
+                            <i class="fas fa-plus"></i>
+                        </button>
                         <div class="faq-answer">
                             <p>Contactez-nous via le formulaire ou WhatsApp. Nous organisons un appel découverte pour comprendre vos besoins, puis nous vous proposons un devis détaillé sous 48h.</p>
                         </div>
-                    </details>
+                    </div>
                     
-                    <details class="faq-item">
-                        <summary class="faq-question">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
                             <span>Quels sont vos délais de livraison moyens ?</span>
-                            <i class="fas fa-plus" aria-hidden="true"></i>
-                        </summary>
+                            <i class="fas fa-plus"></i>
+                        </button>
                         <div class="faq-answer">
                             <p>Les délais varient selon la complexité du projet. Un site vitrine peut être livré en 2-4 semaines, tandis qu'une application complète peut prendre 2-4 mois.</p>
                         </div>
-                    </details>
+                    </div>
                     
-                    <details class="faq-item">
-                        <summary class="faq-question">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
                             <span>Proposez-vous un support après livraison ?</span>
-                            <i class="fas fa-plus" aria-hidden="true"></i>
-                        </summary>
+                            <i class="fas fa-plus"></i>
+                        </button>
                         <div class="faq-answer">
                             <p>Absolument ! Nous offrons une garantie de 3 mois sur tous nos projets, avec un support technique inclus pour assurer la stabilité de votre solution.</p>
                         </div>
-                    </details>
+                    </div>
                     
-                    <details class="faq-item">
-                        <summary class="faq-question">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
                             <span>Comment assurez-vous la sécurité des projets ?</span>
-                            <i class="fas fa-plus" aria-hidden="true"></i>
-                        </summary>
+                            <i class="fas fa-plus"></i>
+                        </button>
                         <div class="faq-answer">
                             <p>Nous suivons les standards OWASP, utilisons le chiffrement des données, effectuons des tests de pénétration et mettons en place une authentification sécurisée.</p>
                         </div>
-                    </details>
+                    </div>
                     
-                    <details class="faq-item">
-                        <summary class="faq-question">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
                             <span>Travaillez-vous avec des clients internationaux ?</span>
-                            <i class="fas fa-plus" aria-hidden="true"></i>
-                        </summary>
+                            <i class="fas fa-plus"></i>
+                        </button>
                         <div class="faq-answer">
                             <p>Oui, nous collaborons avec des clients en Afrique, en Europe et en Amérique du Nord. La communication se fait en français et en anglais.</p>
                         </div>
-                    </details>
+                    </div>
                 </div>
             </div>
         </section>
@@ -908,13 +864,13 @@
                 </div>
                 
                 <div class="contact-grid">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeebzrvb" method="POST" novalidate>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeebzrvb" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">
-                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    <i class="fas fa-user"></i>
                                     Nom complet
-                                    <span class="required" aria-hidden="true">*</span>
+                                    <span class="required">*</span>
                                 </label>
                                 <input 
                                     type="text" 
@@ -923,18 +879,17 @@
                                     placeholder="Votre nom" 
                                     required 
                                     autocomplete="name"
-                                    aria-required="true"
                                 />
-                                <span class="form-error" role="alert">Ce champ est requis</span>
+                                <span class="form-error">Ce champ est requis</span>
                             </div>
                         </div>
                         
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">
-                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <i class="fas fa-envelope"></i>
                                     Email
-                                    <span class="required" aria-hidden="true">*</span>
+                                    <span class="required">*</span>
                                 </label>
                                 <input 
                                     type="email" 
@@ -943,16 +898,15 @@
                                     placeholder="votre@email.com" 
                                     required 
                                     autocomplete="email"
-                                    aria-required="true"
                                 />
-                                <span class="form-error" role="alert">Email invalide</span>
+                                <span class="form-error">Email invalide</span>
                             </div>
                         </div>
                         
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="subject">
-                                    <i class="fas fa-tag" aria-hidden="true"></i>
+                                    <i class="fas fa-tag"></i>
                                     Sujet
                                 </label>
                                 <input 
@@ -967,9 +921,9 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="message">
-                                    <i class="fas fa-comment" aria-hidden="true"></i>
+                                    <i class="fas fa-comment"></i>
                                     Message
-                                    <span class="required" aria-hidden="true">*</span>
+                                    <span class="required">*</span>
                                 </label>
                                 <textarea 
                                     id="message" 
@@ -977,30 +931,28 @@
                                     rows="5" 
                                     placeholder="Décrivez votre projet en détail..." 
                                     required
-                                    aria-required="true"
-                                    maxlength="500"
                                 ></textarea>
-                                <span class="form-error" role="alert">Ce champ est requis</span>
-                                <span class="form-counter" aria-live="polite">0/500</span>
+                                <span class="form-error">Ce champ est requis</span>
+                                <span class="form-counter">0/500</span>
                             </div>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
                             <span class="btn-text">Envoyer le message</span>
                             <span class="btn-loader">
-                                <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                <i class="fas fa-spinner fa-spin"></i>
                             </span>
-                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <i class="fas fa-paper-plane"></i>
                         </button>
                         
-                        <div class="form-feedback" id="formFeedback" role="alert"></div>
+                        <div class="form-feedback" id="formFeedback"></div>
                     </form>
                     
                     <div class="contact-info">
                         <div class="contact-info-card">
                             <div class="contact-info-item">
                                 <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div>
                                     <h4>Adresse</h4>
@@ -1010,12 +962,12 @@
                             
                             <div class="contact-info-item">
                                 <div class="contact-icon">
-                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                    <i class="fab fa-whatsapp"></i>
                                 </div>
                                 <div>
                                     <h4>WhatsApp</h4>
                                     <p>
-                                        <a href="https://wa.me/243832287305" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://wa.me/243832287305" target="_blank" rel="noopener">
                                             +243 832 287 305
                                         </a>
                                     </p>
@@ -1024,7 +976,7 @@
                             
                             <div class="contact-info-item">
                                 <div class="contact-icon">
-                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <i class="fas fa-envelope"></i>
                                 </div>
                                 <div>
                                     <h4>Email</h4>
@@ -1037,23 +989,23 @@
                             </div>
                             
                             <div class="contact-socials">
-                                <a href="#" aria-label="LinkedIn" class="social-link" rel="noopener noreferrer">
-                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                <a href="#" aria-label="LinkedIn" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" aria-label="GitHub" class="social-link" rel="noopener noreferrer">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                <a href="#" aria-label="GitHub" class="social-link">
+                                    <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" aria-label="Twitter" class="social-link" rel="noopener noreferrer">
-                                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                                <a href="#" aria-label="Twitter" class="social-link">
+                                    <i class="fab fa-x-twitter"></i>
                                 </a>
-                                <a href="#" aria-label="Instagram" class="social-link" rel="noopener noreferrer">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <a href="#" aria-label="Instagram" class="social-link">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
                         </div>
                         
                         <div class="contact-availability">
-                            <div class="availability-dot" aria-hidden="true"></div>
+                            <div class="availability-dot"></div>
                             <span>Disponible pour de nouveaux projets</span>
                         </div>
                     </div>
@@ -1071,7 +1023,7 @@
                 <div class="footer-brand">
                     <div class="logo">
                         <div class="logo-icon">
-                            <span class="logo-glow" aria-hidden="true">KC</span>
+                            <span class="logo-glow">KC</span>
                         </div>
                         <span class="logo-text">KivuCode</span>
                     </div>
@@ -1080,19 +1032,13 @@
                         numériques innovantes pour entreprises ambitieuses.
                     </p>
                     <div class="footer-socials">
-                        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="GitHub" rel="noopener noreferrer">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="Twitter" rel="noopener noreferrer">
-                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
-                        </a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
                 
-                <nav class="footer-nav" aria-label="Navigation du pied de page">
+                <div class="footer-nav">
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="#home">Accueil</a></li>
@@ -1101,17 +1047,17 @@
                         <li><a href="#about">À propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </nav>
+                </div>
                 
-                <nav class="footer-services" aria-label="Services du pied de page">
+                <div class="footer-services">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="#services">Développement Web</a></li>
                         <li><a href="#services">Applications Mobiles</a></li>
-                        <li><a href="#services">Backend &amp; API</a></li>
-                        <li><a href="#services">Cloud &amp; DevOps</a></li>
+                        <li><a href="#services">Backend & API</a></li>
+                        <li><a href="#services">Cloud & DevOps</a></li>
                     </ul>
-                </nav>
+                </div>
                 
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
@@ -1125,7 +1071,7 @@
                                 aria-label="Email pour la newsletter"
                             />
                             <button type="submit" aria-label="S'inscrire à la newsletter">
-                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
                     </form>
@@ -1146,7 +1092,7 @@
     BACK TO TOP
     ============================================================ -->
     <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- ============================================================
@@ -1157,9 +1103,9 @@
         target="_blank" 
         class="whatsapp-float" 
         aria-label="Contactez-nous sur WhatsApp"
-        rel="noopener noreferrer"
+        rel="noopener"
     >
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <i class="fab fa-whatsapp"></i>
         <span class="whatsapp-tooltip">Discutons !</span>
     </a>
 
