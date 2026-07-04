@@ -2559,7 +2559,6 @@ img {
     z-index: 10000;
     transition: top var(--transition-fast);
 }
-
 .skip-to-content:focus {
     top: 16px;
 }
